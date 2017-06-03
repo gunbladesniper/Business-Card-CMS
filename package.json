@@ -1,0 +1,9 @@
+{
+  "name": "Business-Card-CMS",
+  "version": "1.0.0",
+  "description": "basic business card CMS",
+  "main": "index.js",
+  "repository": "https://github.com/gunbladesniper/Business-Card-CMS.git",
+  "author": "Savaughn Jones <savaughnjones@gmail.com>",
+  "license": "MIT"
+}
