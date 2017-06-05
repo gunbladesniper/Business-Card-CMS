@@ -1,0 +1,19 @@
+
+
+#app-header{
+	display: flex;
+	justify-content: space-between;
+	background-color: cornflowerblue;
+
+	.header-text{
+		flex: 0 1 80%;
+
+	}
+
+	.header-button{
+    border-radius: 0px;
+    flex: 0 1 10%;
+    background-color: inherit;
+    border-color: cornflowerblue;
+	}
+}
