@@ -4,7 +4,10 @@ function innerHTML(template){
 }
 const TemplateButton = (props)=>{
 	return(
-		<div dangerouslySetInnerHTML={innerHTML(props.template)}/>
+		<div
+		dangerouslySetInnerHTML={innerHTML(props.template)}
+		onClick={()=>{props.changeTemplate(props.template)}}
+		/>
 	)
 }
 

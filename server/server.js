@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname, '../client/dist')))
 app.use(express.static(path.join(__dirname, '../client/public')));
 
 
-app.get('', (req, res)=>{
-	console.log('hello',fakeDB);
+app.get('/templates', (req, res)=>{
+	res.send(fakeDB.templates)
 })
 
 app.listen(3000, (req, res)=>{

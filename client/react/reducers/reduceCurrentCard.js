@@ -6,7 +6,15 @@ const initialCard = {
 	email: '',
 	phone: '',
 	web:'',
-	template: '1'
+	template: `<div id='card-template-1'>
+      <div class='template-1-name'><span class='name-input'>Name</span></div>
+      <div class='template-1-title'> <span class='title-input' Title</span> </div>
+      <div class='template-1-address1'> <span class='address1-input' Title</span> </div>
+      <div class='template-1-address2'> <span class='address2-input' Title</span> </div>
+      <div class='template-1-email'> <span class='email-input' Title</span> </div>
+      <div class='template-1-phone'> <span class='phone-input' Title</span> </div>
+      <div class='template-1-web'> <span class='web-input' Title</span> </div>
+    </div>`
 };
 
 export default function(state = initialCard, action){
