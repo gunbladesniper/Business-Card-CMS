@@ -1,4 +1,6 @@
-const initialTemplates = {};
+const initialTemplates = {
+	templates: []
+};
 
 export default function(state = initialTemplates, action){
 

@@ -1,4 +1,11 @@
 #app-templates{
-	    border: 1px solid green;
+	  border: 1px solid green;
     clear: both;
+    display: flex;
+    justify-content: space-around;
+
+    [id*='card-template']{
+    	flex: 0 1 auto;
+    	border: 1px solid black;
+    }
 }

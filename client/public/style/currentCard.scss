@@ -1,13 +1,67 @@
+
+
 #app-card {
-	   border: 1px solid red;
-    box-sizing: content-box;
+    position: inherit;
+    border: 1px solid;
     width: 69%;
-    float: right;
+    height: inherit;
+    margin-left: 15%;
+
+    *{
+    	width: auto;
+    	height: inherit;
+    }
 
     #card-template-1{
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	height: 100%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	background-size: 100%;
+    	background-image: url('../images/cardbackground1.png');
+    	.template-1-name{
+    		border: 1px dotted red;
+    		flex: 0 1 auto;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    	}
+    	.template-1-title{
+				border: 1px dotted blue;
+    		flex: 0 1 auto;
+    		width: 100%;
+    		height: 10%;
+    		text-align: center;
+    	}
+    	.template-1-address1{
+    		border: 1px dotted green;
+    		flex: 0 1 auto;
+    		width: 100%;
+    		height: 5%;
+    		margin-top: 20%;
+    	}
+    	.template-1-address2{
+    		border: 1px dotted orange;
+    		flex: 0 1 auto;
+        width: 100%;
+        height: 5%;
+        margin-bottom: 1%;
+    	}
+    	.template-1-email{
+    		border: 1px dotted purple;
+    		flex: 0 1 auto;
+    		width: 100%;
+    		height: 5%;
+    	}
+    	.template-1-phone{
+    		border: 1px dotted black;
+    		flex: 0 1 auto;
+        width: 100%;
+        height: 5%;
+    	}
+    	.template-1-web{
+    		border: 1px dotted yellow;
+        flex: 0 1 auto;
+        width: 100%;
+        height: 5%;
+    	}
     }
 }

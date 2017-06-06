@@ -7,6 +7,22 @@ import LogButton from '../components/LogButton';
 
 require('../../public/style/header.scss');
 
+var testUser={
+	userName: 'Savaughn',
+	cards: [
+		{
+      name: 'Savaughn Jones',
+      title: 'Software Engineer',
+      address1: '555 5th st',
+      address2: 'Apt 5',
+      email: 'Savaughn@a.b',
+      phone: '555-555-5555',
+      web:'Savaughn.c',
+      template: '1'
+    }
+	]
+}
+
 class Header extends React.Component {
 	constructor(props){
 		super(props)
@@ -20,9 +36,12 @@ class Header extends React.Component {
 				this.props.user.loggedIn ?
 				<LogButton username={this.props.user.username} />
 				:
-				<LogButton username='login'/>
+				<LogButton username='login'
+				onClick={this.props.login.bind(this)} target={testUser}/>
 			}
-			{this.props.user.loggedIn && <LogButton username='Logout'/>}
+			{this.props.user.loggedIn && <LogButton username='Logout'
+				onClick={()=>{this.props.logout()}}
+			/>}
 			</div>
 		)
 	}

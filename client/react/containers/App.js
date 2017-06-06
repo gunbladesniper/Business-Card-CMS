@@ -2,12 +2,14 @@ import React from 'react';
 import { createStore } from 'redux';
 import allReducers from '../reducers';
 import { Provider } from 'react-redux';
+import axios from 'axios';
 
 
 import Header from './Header';
 import Templates from './Templates';
 import TextEdit from './TextEdit';
 import CurrentCard from './CurrentCard';
+
 require('../../public/style/app.scss');
 
 const store = createStore(allReducers);

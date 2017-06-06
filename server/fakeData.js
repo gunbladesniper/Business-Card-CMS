@@ -1,49 +1,22 @@
 exports.templates = {
-  1:`<div id='card-template-1'>
-      <span className='name-input' className='template-1-name'>Name</span>
-      <span className='title-input' className='template-1-title'>Title</span>
-      <span className='address1-input' className='template-1-Address-1'>Address 1</span>
-      <span className='address2-input' className='template-1-Address-2'>Address 2</span>
-      <span className='email-input' className='template-1-email'>Email</span>
-      <span className='phone-input' className='template-1-phone'>Phone</span>
-      <span className='web-input' className='template-1-web'>Web</span>
+  templates:[`<div id='card-template-1'>
+      <div class='template-1-name'><span class='name-input'>Name</span></div>
+      <div class='template-1-title'> <span class='title-input' Title</span> </div>
+      <div class='template-1-address1'> <span class='address1-input' Title</span> </div>
+      <div class='template-1-address2'> <span class='address2-input' Title</span> </div>
+      <div class='template-1-email'> <span class='email-input' Title</span> </div>
+      <div class='template-1-phone'> <span class='phone-input' Title</span> </div>
+      <div class='template-1-web'> <span class='web-input' Title</span> </div>
     </div>`,
-    2:`<div id='card-template-2'>
-      <span className='name-input' className='template-2-name'>Name</span>
-      <span className='title-input' className='template-2-title'>Title</span>
-      <span className='address1-input' className='template-2-Address-1'>Address 1</span>
-      <span className='address2-input' className='template-2-Address-2'>Address 2</span>
-      <span className='email-input' className='template-2-email'>Email</span>
-      <span className='phone-input' className='template-2-phone'>Phone</span>
-      <span className='web-input' className='template-2-web'>Web</span>
-    </div>`,
-3:`<div id='card-template-3'>
-      <span className='name-input' className='template-3-name'>Name</span>
-      <span className='title-input' className='template-3-title'>Title</span>
-      <span className='address1-input' className='template-3-Address-1'>Address 1</span>
-      <span className='address2-input' className='template-3-Address-2'>Address 2</span>
-      <span className='email-input' className='template-3-email'>Email</span>
-      <span className='phone-input' className='template-3-phone'>Phone</span>
-      <span className='web-input' className='template-3-web'>Web</span>
-    </div>`,
-4:`<div id='card-template-4'>
-      <span className='name-input' className='template-4-name'>Name</span>
-      <span className='title-input' className='template-4-title'>Title</span>
-      <span className='address1-input' className='template-4-Address-1'>Address 1</span>
-      <span className='address2-input' className='template-4-Address-2'>Address 2</span>
-      <span className='email-input' className='template-4-email'>Email</span>
-      <span className='phone-input' className='template-4-phone'>Phone</span>
-      <span className='web-input' className='template-4-web'>Web</span>
-    </div>`,
-5:`<div id='card-template-5'>
-      <span className='name-input' className='template-5-name'>Name</span>
-      <span className='title-input' className='template-5-title'>Title</span>
-      <span className='address1-input' className='template-5-Address-1'>Address 1</span>
-      <span className='address2-input' className='template-5-Address-2'>Address 2</span>
-      <span className='email-input' className='template-5-email'>Email</span>
-      <span className='phone-input' className='template-5-phone'>Phone</span>
-      <span className='web-input' className='template-5-web'>Web</span>
-    </div>`
+    `<div id='card-template-2'>
+      <div class='template-2-name'><span class='name-input'>Name</span></div>
+      <div class='template-2-title'> <span class='title-input' Title</span> </div>
+      <div class='template-2-address1'> <span class='address1-input' Title</span> </div>
+      <div class='template-2-address2'> <span class='address2-input' Title</span> </div>
+      <div class='template-2-email'> <span class='email-input' Title</span> </div>
+      <div class='template-2-phone'> <span class='phone-input' Title</span> </div>
+      <div class='template-2-web'> <span class='web-input' Title</span> </div>
+    </div>`]
 }
 
 exports.users = {

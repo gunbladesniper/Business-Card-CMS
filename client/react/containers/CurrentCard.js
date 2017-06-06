@@ -4,13 +4,13 @@ import { connect } from 'react-redux';
 require('../../public/style/currentCard.scss');
 
 var test=`<div id='card-template-1'>
-      <span class='name-input' className='template-1-name'>Name</span>
-      <span class='title-input' className='template-1-title'>Title</span>
-      <span class='address1-input' className='template-1-Address-1'>Address 1</span>
-      <span class='address2-input' className='template-1-Address-2'>Address 2</span>
-      <span class='email-input' className='template-1-email'>Email</span>
-      <span class='phone-input' className='template-1-phone'>Phone</span>
-      <span class='web-input' className='template-1-web'>Web</span>
+      <div class='template-1-name'><span class='name-input'>Name</span></div>
+      <div class='template-1-title'> <span class='title-input' Title</span> </div>
+      <div class='template-1-address1'> <span class='address1-input' Title</span> </div>
+      <div class='template-1-address2'> <span class='address2-input' Title</span> </div>
+      <div class='template-1-email'> <span class='email-input' Title</span> </div>
+      <div class='template-1-phone'> <span class='phone-input' Title</span> </div>
+      <div class='template-1-web'> <span class='web-input' Title</span> </div>
     </div>`
 
 class CurrentCard extends React.Component {
