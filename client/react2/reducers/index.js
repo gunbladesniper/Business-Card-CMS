@@ -1,12 +1,11 @@
 import { combineReducers } from 'redux';
-import reduceCurrentCard from './reduceCurrentCard';
+import reduceCardEditor from './reduceCardEditor';
 import reduceUser from './reduceUser';
 import reduceTemplates from './reduceTemplates';
 
-
 const allReducers = combineReducers({
+	cards: reduceCardEditor,
 	user: reduceUser,
-	card: reduceCurrentCard,
 	templates: reduceTemplates
 })
 

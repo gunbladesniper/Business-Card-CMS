@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports ={
-	entry: "./client/react/index.jsx",
+	entry: "./client/react2/index.jsx",
 	output: {
 		path: path.join(__dirname, 'client/dist'),
 		filename: 'bundle.js'
@@ -12,7 +12,7 @@ module.exports ={
 			{
 				test: /.jsx?$/,
 				loader: 'babel-loader',
-				exclude: /node_modules/,
+				exclude: [/node_modules/, path.join(__dirname,'client/react1')],
 				query: {
 					presets: ['es2015', 'react'],
 					plugins: ['transform-object-rest-spread']
