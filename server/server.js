@@ -3,8 +3,6 @@ var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
 
-
-var fakeDB = require('./fakeData');
 var pool = require('./database');
 
 var userRouter = require('./userRouter');

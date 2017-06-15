@@ -7,6 +7,8 @@ import axios from 'axios';
 import { changeTemplate, loadTemplates} from '../actions/cardEditorActions';
 import TemplateButton from '../components/TemplateButton';
 
+require('../../public/style/templates.scss');
+
 class TemplateContainer extends React.Component{
 	constructor(props){
 		super(props)
@@ -26,9 +28,11 @@ class TemplateContainer extends React.Component{
 	render(){
 		return(
 			<Row>
-			{this.props.cards.templates.map((template, index)=>{
-				return <TemplateButton key={index} index={index}templates={this.props.cards.templates.slice()} template={template} handleClick={this.handleTemplateChange.bind(this)}/>
-			})}
+				<div id='template-container'>
+				{this.props.cards.templates.map((template, index)=>{
+					return <TemplateButton key={index} index={index}templates={this.props.cards.templates.slice()} template={template} handleClick={this.handleTemplateChange.bind(this)}/>
+				})}
+				</div>
 			</Row>
 		)
 	}

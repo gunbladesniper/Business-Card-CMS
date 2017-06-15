@@ -1,0 +1,26 @@
+@import '_card-positioning';
+@mixin app-card-3(){
+	#app-card-3{
+		.name-position{
+			@include card-positioning(-5%, 0%, 100%, 150%, $font-color-3, center);
+		}
+		.title-position{
+			@include card-positioning(15%, 0%,100%,100%, $font-color-3, center);
+		}
+		.address1-position{
+			@include card-positioning(35%, 0%,100%,75%, $font-color-3, center);
+		}
+		.address2-position{
+			 @include card-positioning(45%, 0%,100%,75%, $font-color-3, center);
+		}
+		.email-position{
+			@include card-positioning(58%, -23%,100%,75%, $font-color-3, center);
+		}
+		.phone-position{
+			@include card-positioning(58%, 23%,100%,75%, $font-color-3, center);
+		}
+		.web-position{
+			@include card-positioning(73%, 0%,100%,75%, $font-color-3, center);
+		}
+	}
+}

@@ -10,11 +10,9 @@ class CurrentCardContainer extends React.Component{
 	constructor(props){
 		super(props)
 	}
-
-
 	render(){
 		return(
-			<Col md={6}>
+			<Col id='current-card-container' md={6}>
 			<div id={this.props.cards.currentCard.template.templatename}>
 			<Image src={this.props.cards.currentCard.template.image} responsive/>
 				<div className={this.props.cards.currentCard.template.namestyle}>{this.props.cards.currentCard.name}</div>

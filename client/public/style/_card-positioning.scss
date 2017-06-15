@@ -1,0 +1,13 @@
+$font-color-2: white;
+$font-color-1: black;
+$font-color-3: grey;
+
+@mixin card-positioning($top, $left, $width, $fontsize, $color, $textalign){
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $width;
+  font-size: $fontsize;
+  color: $color;
+  text-align: $textalign;
+}

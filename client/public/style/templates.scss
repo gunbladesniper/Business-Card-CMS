@@ -1,11 +1,24 @@
-#app-templates{
-	  border: 1px solid green;
-    clear: both;
+@import 'card-template-1';
+@import 'card-template-2';
+@import 'card-template-3';
+
+
+#template-container{
     display: flex;
     justify-content: space-around;
 
-    [id*='card-template']{
-    	flex: 0 1 auto;
-    	border: 1px solid black;
+    .card-template{
+        flex: 0 1 auto;
+        position: relative;
+        border: 1px solid black;
+        width: 20%;
+        height: 100%;
+        img{
+            position: relative;
+            width: 100%;
+        }
+        @include card-template-1;
+        @include card-template-2;
+        @include card-template-3;
     }
 }

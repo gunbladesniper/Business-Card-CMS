@@ -1,0 +1,25 @@
+@import 'card-positioning';
+
+@mixin card-template-3(){
+	.name-position-3{
+		@include card-positioning(-5%, 0%, 100%, 150%, $font-color-3, center);
+  }
+  .title-position-3{
+    @include card-positioning(15%, 0%,100%,100%, $font-color-3, center);
+  }
+  .address1-position-3{
+   	@include card-positioning(35%, 0%,100%,75%, $font-color-3, center);
+  }
+  .address2-position-3{
+    @include card-positioning(45%, 0%,100%,75%, $font-color-3, center);
+ 	}
+  .email-position-3{
+    @include card-positioning(58%, -23%,100%,75%, $font-color-3, center);
+	}
+  .phone-position-3{
+   	@include card-positioning(58%, 23%,100%,75%, $font-color-3, center);
+  }
+  .web-position-3{
+    @include card-positioning(73%, 0%,100%,75%, $font-color-3, center);
+  }
+}
