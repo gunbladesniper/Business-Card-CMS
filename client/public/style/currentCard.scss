@@ -5,16 +5,16 @@ $font-color-2: white;
 
 
 #current-card-container{
-    [id*='app-card']{
-        border: 1px solid;
-        position: relative;
-        width: 100%;
-        img{
-            position: relative;
-            width: 100%;
-        }
-    }
-    @include app-card-1();
-    @include app-card-2();
-    @include app-card-3();
+  [id*='app-card']{
+      border: 1px solid;
+      position: relative;
+      width: 100%;
+      img{
+          position: relative;
+          width: 100%;
+      }
+  }
+  @include app-card-1();
+  @include app-card-2();
+  @include app-card-3();
 }

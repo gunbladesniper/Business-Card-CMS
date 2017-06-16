@@ -13,26 +13,26 @@ import TemplateContainer from './TemplateContainer';
 const store= createStore(allReducers);
 
 class App extends React.Component {
-	constructor(){
-		super()
-	}
+  constructor(){
+    super()
+  }
 
-	render(){
-		return(
-			<Provider store={store}>
-			<Grid id ='main-app'>
-				<Row>
-				<Header/>
-				</Row>
-				<Row>
-				<CurrentCardEditor/>
-				<CurrentCardContainer/>
-				</Row>
-				<TemplateContainer/>
-			</Grid>
-			</Provider>
-		)
-	}
+  render(){
+    return(
+      <Provider store={store}>
+        <Grid id ='main-app'>
+          <Row>
+          <Header/>
+          </Row>
+          <Row>
+          <CurrentCardEditor/>
+          <CurrentCardContainer/>
+          </Row>
+          <TemplateContainer/>
+        </Grid>
+      </Provider>
+    )
+  }
 }
 
 export default App;

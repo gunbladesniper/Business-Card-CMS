@@ -28,7 +28,7 @@ userRouter.get('/nextId',(req,res)=>{
 userRouter.post('/saveCard',(req,res)=>{
 	var user =  req.body.user;
 	var card = req.body.card;
-	pool.query(SQL`INSERT into cards VALUES(${card.id}, 1 , ${card.name}, ${card.title}, ${card.address1}, ${card.address2}, ${card.email}, ${card.phone}, ${card.web}, ${card.template.id}) ON CONFLICT (id) DO UPDATE SET name=${card.name}, title=${card.title}, address1=${card.address1}, address2=${card.address2},email=${card.email}, phone=${card.phone}, web=${card.web}, template_id=${card.template.id} WHERE cards.id = 1;`,(err,resp)=>{
+	pool.query(SQL`INSERT into cards VALUES(${card.id}, 1 , ${card.name}, ${card.title}, ${card.address1}, ${card.address2}, ${card.email}, ${card.phone}, ${card.web}, ${card.template.id}) ON CONFLICT (id) DO UPDATE SET name=${card.name}, title=${card.title}, address1=${card.address1}, address2=${card.address2},email=${card.email}, phone=${card.phone}, web=${card.web}, template_id=${card.template.id} WHERE cards.id = ${card.id};`,(err,resp)=>{
 		if(err){
 			return console.error('error running query', err)
 		}

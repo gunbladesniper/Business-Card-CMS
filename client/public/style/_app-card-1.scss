@@ -1,26 +1,26 @@
 @import 'card-positioning';
 @mixin app-card-1(){
-	#app-card-1{
-		.name-position{
-			@include card-positioning(0, 0%, 100%, 150%, $font-color-1, left );
-		}
-		.title-position{
-			@include card-positioning(20%, 0%,100%,100%, $font-color-1, left);
-		}
-		.address1-position{
-			@include card-positioning(55%, 0%,100%,75%, $font-color-1, left);
-		}
-		.address2-position{
-			@include card-positioning(63%, 0%,100%,75%, $font-color-1, left);
-		}
-		.email-position{
-			@include card-positioning(72%, 0%,100%,75%, $font-color-1, left);
-		}
-		.phone-position{
-			@include card-positioning(80%, 0%,100%,75%, $font-color-1, left);
-		}
-		.web-position{
-			@include card-positioning(88%, 0%,100%,75%, $font-color-1, left);
-		}
-	}
+  #app-card-1{
+    .name-position{
+      @include card-positioning(0, 0%, 100%, 150%, $font-color-1, left );
+    }
+    .title-position{
+      @include card-positioning(20%, 0%,100%,100%, $font-color-1, left);
+    }
+    .address1-position{
+      @include card-positioning(55%, 0%,100%,75%, $font-color-1, left);
+    }
+    .address2-position{
+      @include card-positioning(63%, 0%,100%,75%, $font-color-1, left);
+    }
+    .email-position{
+      @include card-positioning(72%, 0%,100%,75%, $font-color-1, left);
+    }
+    .phone-position{
+      @include card-positioning(80%, 0%,100%,75%, $font-color-1, left);
+    }
+    .web-position{
+      @include card-positioning(88%, 0%,100%,75%, $font-color-1, left);
+    }
+  }
 }

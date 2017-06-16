@@ -8,7 +8,7 @@ var pool = require('./database');
 var userRouter = require('./userRouter');
 
 pool.on('error',(err, client)=>{
-	console.log('idle client error', err.message, err.stack);
+  console.log('idle client error', err.message, err.stack);
 })
 
 app.use(express.static(path.join(__dirname, '../client/dist')))
@@ -18,14 +18,14 @@ app.use(bodyParser.json());
 app.use('/user', userRouter);
 
 app.get('/templates', (req, res)=>{
-	pool.query('SELECT templates.name as templatename, * FROM templates ',(err, resp)=>{
-		if(err){
-			return console.error('error running query', err);
-		}
-		res.send(resp.rows)
-	})
+  pool.query('SELECT templates.name as templatename, * FROM templates ',(err, resp)=>{
+    if(err){
+      return console.error('error running query', err);
+    }
+    res.send(resp.rows)
+  })
 })
 
 app.listen(3000, (req, res)=>{
-	console.log('listening on port 3000');
+  console.log('listening on port 3000');
 })
