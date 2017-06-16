@@ -4,7 +4,7 @@ import {Navbar , FormControl, Button} from 'react-bootstrap';
 
 const UserLoginForm =(props)=>{
 	return(
-		<Navbar.Form>
+		<Navbar.Form className='login-form'>
 			<FormControl
 				type='text'
 				id='username-input'

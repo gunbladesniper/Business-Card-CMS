@@ -1,13 +1,19 @@
-
-
 #app-header{
-	display: flex;
-	justify-content: space-between;
-	background-color: cornflowerblue;
 
-	.header-text{
-		flex: 0 1 80%;
+	.nav-header{
+		width: 100%;
+		text-align: center;
 
+	}
+	#card-options{
+		text-align: center;
+	}
+	.dropdown{
+		margin-left: 143%;
+	}
+
+	ul.nav.navbar-nav{
+		margin-left: 29%;
 	}
 
 	.header-button{

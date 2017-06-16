@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Row } from 'react-bootstrap';
 import axios from 'axios';
-
 import { changeTemplate, loadTemplates} from '../actions/cardEditorActions';
 import TemplateButton from '../components/TemplateButton';
 
@@ -28,6 +27,7 @@ class TemplateContainer extends React.Component{
 	render(){
 		return(
 			<Row>
+			<div className='template-header'> <h2>Templates</h2> </div>
 				<div id='template-container'>
 				{this.props.cards.templates.map((template, index)=>{
 					return <TemplateButton key={index} index={index}templates={this.props.cards.templates.slice()} template={template} handleClick={this.handleTemplateChange.bind(this)}/>

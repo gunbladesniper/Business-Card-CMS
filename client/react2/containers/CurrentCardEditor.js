@@ -13,8 +13,9 @@ class CurrentCardEditor extends React.Component {
 
 	render(){
 		return(
-			<Col md={6}>
+			<Col id='text-edit-container' md={6}>
 			<div id="app-text-edit">
+			<h4> Edit Text </h4>
 			<form>
 				<FormGroup>
 					<FormControl

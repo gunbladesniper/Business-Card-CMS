@@ -4,11 +4,12 @@ import{connect} from 'react-redux';
 import { changeCurrentCard, changeCards, addCard, deleteCard } from '../actions/cardEditorActions';
 import { login, logout } from '../actions/userActions';
 import axios from 'axios';
-import { Nav , Navbar, Button } from 'react-bootstrap';
+import { Nav , Navbar, Button, Jumbotron } from 'react-bootstrap';
 
 import UserCardDropdown from '../components/UserCardDropdown';
 import UserLoginForm from '../components/UserLoginForm';
 
+require('../../public/style/header.scss');
 
 class Header extends React.Component{
   constructor(props){
@@ -19,6 +20,7 @@ class Header extends React.Component{
       passwordInput: ''
     }
   }
+
   handleSubmit(){
     axios.get('/user/login',{
       params: {
@@ -96,7 +98,15 @@ class Header extends React.Component{
   render(){
     return(
       <Navbar id='app-header'>
-      <Navbar.Header>Header here</Navbar.Header>
+      <Navbar.Header className ='nav-header'><h2>Business Card Manager</h2></Navbar.Header>
+        {this.props.user.loggedIn &&
+          <div id='card-options'>
+          <Button onClick={this.props.logout}>Logout</Button>
+          <Button onClick={this.insertCard.bind(this)}>Add Card</Button>
+          <Button onClick={this.removeCard.bind(this)}>Delete Card</Button>
+          <Button onClick={this.saveCard.bind(this)}>Save Card</Button>
+          </div>
+        }
         <Nav>
           { !this.props.user.loggedIn && <UserLoginForm
             handleUsernameInputChange={this.handleUsernameInputChange.bind(this)}
@@ -108,14 +118,7 @@ class Header extends React.Component{
 
           {this.props.user.loggedIn && <UserCardDropdown cards={this.props.cards.cards} handleCardChange={this.handleCardChange.bind(this)}/>}
         </Nav>
-        {this.props.user.loggedIn &&
-          <div id='card-options'>
-          <Button onClick={this.props.logout}>Logout</Button>
-          <Button onClick={this.insertCard.bind(this)}>Add Card</Button>
-          <Button onClick={this.removeCard.bind(this)}>Delete Card</Button>
-          <Button onClick={this.saveCard.bind(this)}>Save Card</Button>
-          </div>
-        }
+
       </Navbar>
     )
   }

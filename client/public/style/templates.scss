@@ -3,9 +3,13 @@
 @import 'card-template-3';
 
 
+.template-header{
+        text-align: center;
+    }
 #template-container{
     display: flex;
     justify-content: space-around;
+    text-align: center;
 
     .card-template{
         flex: 0 1 auto;
