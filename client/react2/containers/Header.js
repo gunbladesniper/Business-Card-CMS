@@ -29,7 +29,6 @@ class Header extends React.Component{
       }
     })
     .then((res)=>{
-      console.log(res.data);
       this.props.login({
         username: res.data[0].username,
         user_id: res.data[0].id

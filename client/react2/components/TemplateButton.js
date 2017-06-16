@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Image } from 'react-bootstrap';
 
 const TemplateButton =(props)=>{
-  console.log(props.template);
   return(
     <div
     className='card-template'
